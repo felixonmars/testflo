@@ -106,6 +106,10 @@ def _get_parser():
     parser.add_argument('--noreport', action='store_true', dest='noreport',
                         help="Don't create a test results file.")
 
+    parser.add_argument('-m', '--match', action='store', dest='match',
+                        default='test_*.py',
+                        help="Match pattern for test files.")
+
     parser.add_argument('tests', metavar='test', nargs='*',
                         help='A test method, test case, module, or directory to run.')
 
