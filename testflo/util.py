@@ -69,7 +69,7 @@ def _get_parser():
     parser.add_argument('-f', '--fail', action='store_true', dest='save_fails',
                         help="Save failed tests to failtests.in file.")
     parser.add_argument('--full_path', action='store_true', dest='full_path',
-                        help="Display full test specs instead of shortened names.")                        
+                        help="Display full test specs instead of shortened names.")
     parser.add_argument('-i', '--isolated', action='store_true', dest='isolated',
                         help="Run each test in a separate subprocess.")
     parser.add_argument('--nompi', action='store_true', dest='nompi',
